@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-set(lib_base_name BookFiler-Module-Pdf-PoDoFo
+set(lib_base_name BookFiler-Module-Pdf-PoDoFo)
 project(${lib_base_name} VERSION 1.0.0 LANGUAGES CXX)
 
 # Configurable Options
