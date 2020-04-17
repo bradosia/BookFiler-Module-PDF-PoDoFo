@@ -1,7 +1,19 @@
 cmake_minimum_required(VERSION 3.0)
 
-# The plugin name
-set(lib_base_name modulePdfMupdf)
+set(lib_base_name BookFiler-Module-Pdf-PoDoFo
+project(${lib_base_name} VERSION 1.0.0 LANGUAGES CXX)
+
+# Configurable Options
+OPTION(BUILD_SHARED_LIBS "Build shared libraries" ON)
+OPTION(BUILD_STATIC_LIBS "Build static libraries" ON)
+
+find_package(Boost 1.56 REQUIRED COMPONENTS
+             system filesystem)
+
+# third party
+set(INCLUDE_DIRECTORIES
+  third_party/rapidjson/include/
+)
 
 # Set up source files
 set(SOURCES
