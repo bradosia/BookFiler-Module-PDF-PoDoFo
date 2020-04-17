@@ -15,6 +15,12 @@ Top Level
   * Although QT includes non-UI features, the entire QT framework is considered as UI since the non-UI features would not be seperable in case the UI framework was changed to another framework.
   * In an Model-View-Controller (MVC) design this is the Model
 
+# Build
+
+Windows MSYS2 MinGW64
+```shell
+pacman -S mingw-w64-x86_64-podofo
+```
 
 # Coding Practices
 * header guards are all caps and use underscore spacing
